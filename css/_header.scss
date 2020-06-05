@@ -1,0 +1,32 @@
+
+
+.header {
+    display: grid;
+    row-gap: 2rem;
+
+    &__question {
+        margin-top: 4rem;
+    }
+
+    &__tracker {
+        font-weight: bolder;
+    }
+    
+    &__progress {
+        width: 100px;
+        background: lightgray;
+        margin: 0 auto;
+    }
+
+    &__bar {
+        height: 10px;
+        width: 20%;
+        background: black;
+    }
+
+    &__tagline {
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+        color: gray;
+    }
+}

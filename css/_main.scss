@@ -1,0 +1,66 @@
+
+
+.main {
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+        grid-gap: 2rem;
+    }
+
+   
+
+    &__item {
+        height: 100px;
+        display: grid;
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__input + label i {
+        background-image: url('../images/circle-regular.svg');
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+        margin: 0 0.5rem;
+    }
+
+    &__input:checked + label i {
+        background-image: url('../images/check-circle-regular.svg');
+    }
+
+    &__label {
+        background: lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            color: orange;
+        }
+    }
+}
+
+//Responsive
+
+@media (max-width: 600px) {
+    
+    .main__list {
+        grid-template-columns: auto;
+    }
+
+    .main__item, .footer__button {
+        margin: 0 1rem;;
+    }
+   
+}

@@ -1,0 +1,29 @@
+
+.footer {
+    display: grid;
+    margin-top: 2rem;
+
+    &__button {
+        padding: 0.7rem;
+        font-weight: bolder;
+        background: white;
+        border: 2px solid black;
+        transition: 0.4s all ease;
+
+        &:hover {
+            cursor: pointer;
+            background: black;
+            color: white;
+        }
+    }
+}
+
+//Responsive
+
+@media (max-width: 600px) {
+
+    .footer {
+       margin-bottom: 1rem;
+    }
+    
+}

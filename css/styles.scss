@@ -1,0 +1,28 @@
+//Settings
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//Quiz
+
+.quiz {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+//Header
+
+@import 'header';
+
+//Main
+
+@import 'main';
+
+//Footer
+
+@import 'footer';
