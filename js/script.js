@@ -41,6 +41,7 @@ const JabQuiz = (_ => {
         footerRestartBtn.addEventListener('click', _ => {
             myQuiz.currentIndex = 0;
             myQuiz.score = 0;
+            renderHTML(headerTaglineEl, 'Pick an option below!')
             renderAll();
         })
     }
